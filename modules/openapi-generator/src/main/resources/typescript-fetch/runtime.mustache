@@ -232,11 +232,11 @@ export class JSONApiResponse<T> {
 }
 
 export class VoidApiResponse {
-    constructor(public raw: Response) {}
+  constructor(public raw: Response) {}
 
-    async value() {
-        return undefined;
-    }
+  async value(): Promise<undefined> {
+    return undefined;
+  }
 }
 
 export class BlobApiResponse {
